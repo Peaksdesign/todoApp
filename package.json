@@ -1,32 +1,55 @@
 {
-  "name": "ToDoApp",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "webpack-dev-server",
-    "watch": "webpack-dev-server --progress"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@babel/preset-react": "^7.9.4",
-    "babel-loader": "^8.1.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "bootstrap": "^4.5.0",
-    "css-loader": "^3.5.3",
-    "font-awesome": "^4.7.0",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
-    "react-bs-datatable": "^2.1.1",
-    "react-dom": "^16.13.1",
-    "react-notification-system": "^0.4.0",
-    "style-loader": "^1.2.1",
-    "webpack-dev-server": "^3.11.0"
-  }
+    "name": "todoppp",
+    "version": "2.0.0",
+    "main": "index.tsx",
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack-dev-server",
+        "watch": "webpack-dev-server --progress"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "@babel/preset-react": "^7.9.4",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-loader": "^8.1.0",
+        "eslint": "^7.1.0",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11"
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.9.6",
+        "@types/jest": "^25.2.3",
+        "@types/node": "^14.0.6",
+        "@types/react": "^16.9.35",
+        "@types/react-dom": "^16.9.8",
+        "@types/react-notification-system": "^0.2.39",
+        "@types/react-notification-system-redux": "^1.1.6",
+        "@types/react-redux": "^7.1.9",
+        "@types/redux": "^3.6.0",
+        "@typescript-eslint/eslint-plugin": "^3.1.0",
+        "@typescript-eslint/parser": "^3.1.0",
+        "bootstrap": "^4.5.0",
+        "css-loader": "^3.5.3",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-prettier": "^3.1.3",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-redux": "^3.0.3",
+        "font-awesome": "^4.7.0",
+        "prettier": "^2.0.5",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.0.1",
+        "react-bs-datatable": "^2.1.1",
+        "react-dom": "^16.13.1",
+        "react-notification-system": "^0.4.0",
+        "react-notification-system-redux": "^2.0.1",
+        "react-redux": "^7.2.0",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-thunk": "^2.3.0",
+        "style-loader": "^1.2.1",
+        "typescript": "^3.9.3",
+        "webpack-dev-server": "^3.11.0"
+    }
 }

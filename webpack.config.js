@@ -1,31 +1,35 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
     devServer: {
-        contentBase: path.resolve(__dirname,"./src"),
-        historyApiFallback: true
+        contentBase: path.resolve(__dirname, './src'),
+        historyApiFallback: true,
     },
-    entry: path.resolve(__dirname, "./src/index.js"),
+    entry: path.resolve(__dirname, './src/index.tsx'),
     module: {
         rules: [
             {
-                test: /\.js$/,
-                use: "babel-loader"
+                test: /\.(js|jsx)$/,
+                use: 'babel-loader',
             },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
-        ]
+            {
+                test: /\.tsx?$/,
+                loader: 'awesome-typescript-loader',
+            },
+        ],
     },
     resolve: {
         modules: [path.resolve(__dirname, './src'), 'node_modules'],
-        extensions: ['.js', '.jsx', '.json'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
-          reducers: path.resolve(__dirname, './src/reducers')
-        }
-      },
+            reducers: path.resolve(__dirname, './src/reducers'),
+        },
+    },
     output: {
-        filename: "bundle.js"
-    }
-}
+        filename: 'bundle.js',
+    },
+};
