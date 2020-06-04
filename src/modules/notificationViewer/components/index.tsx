@@ -6,13 +6,8 @@ type NotificationType = {
     notifications: Notification[];
 };
 
-export default class NotificationViewer extends React.Component<
-    NotificationType,
-    undefined
-> {
-    render() {
-        const { notifications } = this.props;
+export default function NotificationViewer(props: NotificationType) {
+    const { notifications } = props;
 
-        return <Notifications notifications={notifications} />;
-    }
+    return <Notifications notifications={notifications} />;
 }

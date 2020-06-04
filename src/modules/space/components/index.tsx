@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import type { SpaceProps } from 'types';
 
-class Space extends Component<SpaceProps, unknown> {
-    render() {
-        return <div style={{ height: this.props.height }}></div>;
-    }
+export default function Space(props: SpaceProps) {
+    return <div style={{ height: props.height }}></div>;
 }
-
-export default Space;
