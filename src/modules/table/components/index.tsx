@@ -2,7 +2,18 @@ import Space from 'modules/space/components';
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Datatable from 'react-bs-datatable';
-import type { TableProps, TableState, ItemType } from 'types';
+import type { ItemType } from 'types';
+
+type TableProps = {
+    itemList: Array<ItemType>;
+    loadList: () => void;
+    deleteItem: (itemId: number) => void;
+    createItem: (description: string) => void;
+};
+
+type TableState = {
+    description: string;
+};
 
 export default class Table extends Component<TableProps, TableState> {
     constructor(props: TableProps) {
